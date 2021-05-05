@@ -25,3 +25,7 @@ RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/LDAPAuthentication2-REL
 RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/LDAPUserInfo-REL1_35-2c2d4b3.tar.gz -o /tmp/LDAPU.tgz && \
     	tar zxf /tmp/LDAPU.tgz -C /var/www/html/extensions && \
     	rm -rf /tmp/LDAPU.tgz
+# https://www.mediawiki.org/wiki/Special:ExtensionDistributor/Quiz
+RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/Quiz-REL1_35-34b701a.tar.gz -o /tmp/Quiz.tgz && \
+    	tar zxf /tmp/Quiz.tgz -C /var/www/html/extensions && \
+    	rm -rf /tmp/Quiz.tgz
