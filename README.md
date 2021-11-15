@@ -1,6 +1,6 @@
 # Mediawiki with LDAP authentication extensions
 
-Based on the [official Mediawiki container](https://hub.docker.com/_/mediawiki).
+Based on the lts [official Mediawiki container](https://hub.docker.com/_/mediawiki).
 
 ## Extensions
 
@@ -11,6 +11,7 @@ Based on the [official Mediawiki container](https://hub.docker.com/_/mediawiki).
 - [LDAPUserInfo](https://www.mediawiki.org/wiki/Extension:LDAPUserInfo)
 - [Quiz](https://www.mediawiki.org/wiki/Extension:Quiz)
 - [TocTree](https://www.mediawiki.org/wiki/Extension:TocTree)
+- [Auth remoteuser](https://www.mediawiki.org/wiki/Extension:Auth_remoteuser)
 
 ## Installation
 

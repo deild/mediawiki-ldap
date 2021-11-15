@@ -33,3 +33,7 @@ rm -rf /tmp/Quiz.tgz
 RUN		curl -S https://extdist.wmflabs.org/dist/extensions/TocTree-REL1_35-1303d6e.tar.gz -o /tmp/TocTree.tgz && \
 tar zxf /tmp/TocTree.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/TocTree.tgz
+# https://www.mediawiki.org/wiki/Special:ExtensionDistributor/Auth_remoteuser
+RUN		curl -S https://extdist.wmflabs.org/dist/extensions/Auth_remoteuser-REL1_35-3563afc.tar.gz -o /tmp/Auth_remoteuser.tgz && \
+tar zxf /tmp/Auth_remoteuser.tgz -C /var/www/html/extensions && \
+rm -rf /tmp/Auth_remoteuser.tgz
