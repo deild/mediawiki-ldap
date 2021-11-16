@@ -37,3 +37,10 @@ rm -rf /tmp/TocTree.tgz
 RUN		curl -S https://extdist.wmflabs.org/dist/extensions/Auth_remoteuser-REL1_35-3563afc.tar.gz -o /tmp/Auth_remoteuser.tgz && \
 tar zxf /tmp/Auth_remoteuser.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/Auth_remoteuser.tgz
+
+RUN mkdir -p /etc/var/kerberos
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends libapache2-mod-auth-gssapi \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
