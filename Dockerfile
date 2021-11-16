@@ -2,9 +2,10 @@ FROM mediawiki:1.35.4
 
 # add ldap suport to php
 RUN apt-get update \
-	&& apt-get install --yes --no-install-recommends libldap2-dev libpq-dev \
+	&& apt-get install --yes --no-install-recommends libldap2-dev libpq-dev libapache2-mod-auth-gssapi \
 	&& docker-php-ext-install ldap pgsql pdo pdo_pgsql \
-	&& rm -rf /var/lib/apt/lists
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/*
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/LDAPProvider
 RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/LDAPProvider-REL1_35-433dd18.tar.gz -o /tmp/LDAPP.tgz && \
 tar zxf /tmp/LDAPP.tgz -C /var/www/html/extensions && \
@@ -39,8 +40,3 @@ tar zxf /tmp/Auth_remoteuser.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/Auth_remoteuser.tgz
 
 RUN mkdir -p /etc/var/kerberos
-
-RUN apt-get update \
- && apt-get install -y --no-install-recommends libapache2-mod-auth-gssapi \
- && apt-get clean \
- && rm -rf /var/lib/apt/lists/*
