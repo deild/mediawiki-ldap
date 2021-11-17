@@ -2,7 +2,7 @@ FROM mediawiki:1.35.4
 
 # add ldap suport to php
 RUN apt-get update \
-	&& apt-get install --yes --no-install-recommends libldap2-dev libpq-dev libapache2-mod-auth-gssapi \
+	&& apt-get install --yes --no-install-recommends libldap2-dev libpq-dev libapache2-mod-auth-gssapi php7.4-fpm php-apcu-bc \
 	&& docker-php-ext-install ldap pgsql pdo pdo_pgsql \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
