@@ -1,3 +1,5 @@
+[![Docker](https://img.shields.io/docker/cloud/build/eaudeweb/scratch?label=Docker&style=flat&logo=docker)](https://hub.docker.com/repository/docker/deild/mediawiki-ldap/builds)
+
 # Mediawiki with LDAP authentication extensions
 
 Based on the lts [official Mediawiki container](https://hub.docker.com/_/mediawiki).
