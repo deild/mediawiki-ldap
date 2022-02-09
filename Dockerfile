@@ -27,7 +27,7 @@ RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/LDAPUserInfo-REL1_35-d0
 tar zxf /tmp/LDAPU.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/LDAPU.tgz
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/Quiz
-RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/Quiz-REL1_35-c16357c.tar.gz -o /tmp/Quiz.tgz && \
+RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/Quiz-REL1_35-51fde44.tar.gz -o /tmp/Quiz.tgz && \
 tar zxf /tmp/Quiz.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/Quiz.tgz
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/TocTree
@@ -38,5 +38,9 @@ rm -rf /tmp/TocTree.tgz
 RUN		curl -S https://extdist.wmflabs.org/dist/extensions/Auth_remoteuser-REL1_35-e30a654.tar.gz -o /tmp/Auth_remoteuser.tgz && \
 tar zxf /tmp/Auth_remoteuser.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/Auth_remoteuser.tgz
+# https://www.mediawiki.org/wiki/Extension:DarkMode
+RUN		curl -S https://extdist.wmflabs.org/dist/extensions/DarkMode-REL1_35-fe7d959.tar.gz -o /tmp/DarkMode.tgz && \
+tar zxf /tmp/DarkMode.tgz -C /var/www/html/extensions && \
+rm -rf /tmp/DarkMode.tgz
 
 RUN mkdir -p /etc/var/kerberos

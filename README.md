@@ -14,6 +14,7 @@ Based on the lts [official Mediawiki container](https://hub.docker.com/_/mediawi
 - [Quiz](https://www.mediawiki.org/wiki/Extension:Quiz)
 - [TocTree](https://www.mediawiki.org/wiki/Extension:TocTree)
 - [Auth remoteuser](https://www.mediawiki.org/wiki/Extension:Auth_remoteuser)
+- [DarkMode](https://www.mediawiki.org/wiki/Extension:DarkMode)
 
 ## Installation
 
