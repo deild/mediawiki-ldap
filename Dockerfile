@@ -1,4 +1,4 @@
-FROM mediawiki:1.35.5
+FROM mediawiki:1.37.1
 
 # add ldap suport to php
 RUN apt-get update \
@@ -15,7 +15,7 @@ RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/LDAPAuthorization-REL1_
 tar zxf /tmp/LDAPA.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/LDAPA.tgz
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/PluggableAuth
-RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/PluggableAuth-REL1_35-efff551.tar.gz -o /tmp/PlugA.tgz && \
+RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/PluggableAuth-REL1_37-5757eca.tar.gz -o /tmp/PlugA.tgz && \
 tar zxf /tmp/PlugA.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/PlugA.tgz
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/LDAPAuthentication2
@@ -23,23 +23,23 @@ RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/LDAPAuthentication2-REL
 tar -zxf /tmp/LDAPA2.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/LDAPA2.tgz
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/LDAPUserInfo
-RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/LDAPUserInfo-REL1_35-d04327e.tar.gz -o /tmp/LDAPU.tgz && \
+RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/LDAPUserInfo-REL1_37-a4b1bcf.tar.gz -o /tmp/LDAPU.tgz && \
 tar zxf /tmp/LDAPU.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/LDAPU.tgz
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/Quiz
-RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/Quiz-REL1_35-55f8087.tar.gz -o /tmp/Quiz.tgz && \
+RUN 	curl -S https://extdist.wmflabs.org/dist/extensions/Quiz-REL1_37-34d3dbc.tar.gz -o /tmp/Quiz.tgz && \
 tar zxf /tmp/Quiz.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/Quiz.tgz
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/TocTree
-RUN		curl -S https://extdist.wmflabs.org/dist/extensions/TocTree-REL1_35-75bb421.tar.gz -o /tmp/TocTree.tgz && \
+RUN		curl -S https://extdist.wmflabs.org/dist/extensions/TocTree-REL1_37-d6cd965.tar.gz -o /tmp/TocTree.tgz && \
 tar zxf /tmp/TocTree.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/TocTree.tgz
 # https://www.mediawiki.org/wiki/Special:ExtensionDistributor/Auth_remoteuser
-RUN		curl -S https://extdist.wmflabs.org/dist/extensions/Auth_remoteuser-REL1_35-e30a654.tar.gz -o /tmp/Auth_remoteuser.tgz && \
+RUN		curl -S https://extdist.wmflabs.org/dist/extensions/Auth_remoteuser-REL1_37-267291a.tar.gz -o /tmp/Auth_remoteuser.tgz && \
 tar zxf /tmp/Auth_remoteuser.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/Auth_remoteuser.tgz
 # https://www.mediawiki.org/wiki/Extension:DarkMode
-RUN		curl -S https://extdist.wmflabs.org/dist/extensions/DarkMode-REL1_35-fe7d959.tar.gz -o /tmp/DarkMode.tgz && \
+RUN		curl -S https://extdist.wmflabs.org/dist/extensions/DarkMode-REL1_37-ca482df.tar.gz -o /tmp/DarkMode.tgz && \
 tar zxf /tmp/DarkMode.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/DarkMode.tgz
 
