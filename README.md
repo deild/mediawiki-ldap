@@ -19,5 +19,5 @@ Based on the lts [official Mediawiki container](https://hub.docker.com/_/mediawi
 ## Installation
 
 ```sh
-docker pull deild/mediawiki-ldap
+docker pull deild/mediawiki-ldap:latest
 ```
