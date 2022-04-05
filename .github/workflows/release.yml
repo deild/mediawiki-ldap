@@ -54,11 +54,22 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+<<<<<<< HEAD
       - 
         name: Create Release
+=======
+
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
+      - name: Create Release
+>>>>>>> 6e95c1f (Fixed workflows)
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ github.ref }}
+<<<<<<< HEAD
           release_name: ${{ github.ref }}
+=======
+          release_name: ${{ github.ref }}
+>>>>>>> 6e95c1f (Fixed workflows)
