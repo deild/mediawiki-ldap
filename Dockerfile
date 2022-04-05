@@ -1,4 +1,4 @@
-FROM mediawiki:1.35.5
+FROM mediawiki:1.35.6
 
 # add ldap suport to php
 RUN apt-get update \
@@ -39,7 +39,7 @@ RUN		curl -S https://extdist.wmflabs.org/dist/extensions/Auth_remoteuser-REL1_35
 tar zxf /tmp/Auth_remoteuser.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/Auth_remoteuser.tgz
 # https://www.mediawiki.org/wiki/Extension:DarkMode
-RUN		curl -S https://extdist.wmflabs.org/dist/extensions/DarkMode-REL1_35-fe7d959.tar.gz -o /tmp/DarkMode.tgz && \
+RUN		curl -S https://extdist.wmflabs.org/dist/extensions/DarkMode-REL1_35-c82e7f7.tar.gz -o /tmp/DarkMode.tgz && \
 tar zxf /tmp/DarkMode.tgz -C /var/www/html/extensions && \
 rm -rf /tmp/DarkMode.tgz
 
