@@ -1,7 +1,6 @@
 name: CI
 on:
   push:
-    branches: [ main ]
   pull_request:
 jobs:
   lint:
@@ -11,7 +10,7 @@ jobs:
     - name: Check out the repo
       uses: actions/checkout@v2
     - name: Hadolint lint
-      uses: hadolint/hadolint-action@v1.4.0
+      uses: hadolint/hadolint-action@v2.1.0
       with:
         dockerfile: Dockerfile
   docker:

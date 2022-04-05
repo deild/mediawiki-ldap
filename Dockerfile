@@ -1,4 +1,4 @@
-FROM mediawiki:1.37.1
+FROM mediawiki:1.37.2
 
 # add ldap suport to php
 RUN apt-get update \
