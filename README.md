@@ -21,3 +21,8 @@ Based on the lts [official Mediawiki container](https://hub.docker.com/_/mediawi
 ```sh
 docker pull deild/mediawiki-ldap:latest
 ```
+
+## Supported tags and respective `Dockerfile` links
+
+- [1.37.2-r3, 1.37.2, 1.37, stable, latest](https://github.com/deild/mediawiki-ldap/blob/stable/Dockerfile)
+- [1.35.6-r2, 1.35.6, 1.35, lts](https://github.com/deild/mediawiki-ldap/blob/lts/Dockerfile)
