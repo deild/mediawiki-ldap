@@ -2,7 +2,7 @@
 
 # Mediawiki with LDAP authentication extensions
 
-Based on the lts [official Mediawiki container](https://hub.docker.com/_/mediawiki).
+Based on the stable [official Mediawiki container](https://hub.docker.com/_/mediawiki).
 
 ## Extensions
 
