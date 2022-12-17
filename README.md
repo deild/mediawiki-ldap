@@ -24,5 +24,4 @@ docker pull deild/mediawiki-ldap:latest
 
 ## Supported tags and respective `Dockerfile` links
 
-- [1.38.2-r1, 1.38.2, 1.38, stable, latest](https://github.com/deild/mediawiki-ldap/blob/stable/Dockerfile)
-- [1.35.7-r1, 1.35.7, 1.35, lts](https://github.com/deild/mediawiki-ldap/blob/lts/Dockerfile)
+- [1.39.0-r1, 1.39.0, 1.39, lts, stable, latest](https://github.com/deild/mediawiki-ldap/blob/lts/Dockerfile)
