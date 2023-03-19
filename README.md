@@ -2,7 +2,7 @@
 
 # Mediawiki with LDAP authentication extensions
 
-Based on the stable [official Mediawiki container](https://hub.docker.com/_/mediawiki).
+Based on the lts [official Mediawiki container](https://hub.docker.com/_/mediawiki).
 
 ## Extensions
 
@@ -24,4 +24,4 @@ docker pull deild/mediawiki-ldap:latest
 
 ## Supported tags and respective `Dockerfile` links
 
-- [1.39.1-r1, 1.39.1, 1.39, lts, stable, latest](https://github.com/deild/mediawiki-ldap/blob/lts/Dockerfile)
+- [1.39.2-r1, 1.39.2, 1.39, lts, stable, latest](https://github.com/deild/mediawiki-ldap/blob/main/Dockerfile)
