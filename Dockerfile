@@ -16,7 +16,7 @@ RUN apt-get update \
 && curl -sS https://extdist.wmflabs.org/dist/extensions/PluggableAuth-REL1_39-8a48b65.tar.gz -o /tmp/PlugA.tar.gz \
 && tar xf /tmp/PlugA.tar.gz -C /var/www/html/extensions \
 && rm -rf /tmp/PlugA.tar.gz \
-&& curl -sS https://extdist.wmflabs.org/dist/extensions/LDAPAuthentication2-REL1_39-125b09a.tar.gz -o /tmp/LDAPA2.tar.gz \
+&& curl -sS https://extdist.wmflabs.org/dist/extensions/LDAPAuthentication2-REL1_39-649e1ce.tar.gz -o /tmp/LDAPA2.tar.gz \
 && tar -xf /tmp/LDAPA2.tar.gz -C /var/www/html/extensions \
 && rm -rf /tmp/LDAPA2.tar.gz \
 && curl -sS https://extdist.wmflabs.org/dist/extensions/LDAPUserInfo-REL1_39-01a4b9e.tar.gz -o /tmp/LDAPU.tar.gz \
